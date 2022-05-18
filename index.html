@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kuis 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="progress()">
+
+    <div id="myProgress">
+        <div id="myBar">10%</div>
+    </div>
+
+    <div id="spinner" class="spinner-border"></div>
+
+    <div id="myDiv">
+        <div class="jumbotron text-center mb-0">
+            <h1>Welcome to my Website</h1>
+            <p>Hello everyone, my name is Gruda. I am designed this website.</p>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+            <a class="navbar-brand" href="#">Grudablog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Account
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log out</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>About Me</h3>
+                    <p>Photo of me:</p>
+                    <div class="card w-75 mb-5">
+                        <img class="card-img-top img-thumbnail" src="assets/img/profile.jpg" alt="Profile">
+                        <div class="card-body">
+                            <h4 class="card-title">Gruda Sakti Krida P.</h4>
+                            <p class="card-text">Student of Informatics Engineering Satya Wacana Christian University
+                            </p>
+                        </div>
+                    </div>
+                    <h3>Contact</h3>
+                    <p>You can reach me by :</p>
+                    <ul class="nav nav-pills flex-column mb-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/grudauki/">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/grudasakti/">LinkedIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/grudasakti">GitHub</a>
+                        </li>
+                    </ul>
+                    <h3>Course Schedule</h3>
+                    <br>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        Kartu Studi Tetap
+                    </button>
+
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100">KARTU STUDI TETAP</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Jam</th>
+                                                <th>Ruang</th>
+                                                <th>Kode</th>
+                                                <th>Matakuliah</th>
+                                                <th>SKS A</th>
+                                                <th>SKS B</th>
+                                                <th>B/U/P</th>
+                                                <th>Pengajar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-borderless">
+                                            <tr>
+                                                <td colspan="7"><b>SELASA</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>12-15</td>
+                                                <td>FTI469</td>
+                                                <td>IN315C</td>
+                                                <td>PEMROGRAMAN BEORIENTASI PLATFORM</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>B</td>
+                                                <td>RAYNALDO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16-19</td>
+                                                <td>FTI333</td>
+                                                <td>IN312G</td>
+                                                <td>KEAMANAN DATA</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                                <td>B</td>
+                                                <td>VITA TANTRIYATI</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="7"><b>RABU</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>09-12</td>
+                                                <td>FTI400E</td>
+                                                <td>IN311A</td>
+                                                <td>PEMODELAN DAN SIMULASI</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                                <td>B</td>
+                                                <td>YERYMIA ALFA SUSETYO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>13-16</td>
+                                                <td>FTI506</td>
+                                                <td>IN318A</td>
+                                                <td>SISTEM BASIS DATA 2</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>B</td>
+                                                <td>SRI YULIANTO JOKO PRASETYO</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="7"><b>KAMIS</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>13-16</td>
+                                                <td>FTI455</td>
+                                                <td>IN317A</td>
+                                                <td>MACHINE LEARNING</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>B</td>
+                                                <td>HINDRIYANTO DWI PURNOMO</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-8">
+                    <h2>MALIOBORO</h2>
+                    <h6>Yogyakarta, Dec 10 2019</h6>
+                    <img class="img-fluid" src="assets/img/1.jpg" alt="Picture1">
+                    <br>
+                    <br>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure
+                        laudantium
+                        qui eos fugiat quasi
+                        voluptas, provident dignissimos, consectetur adipisci corrupti enim soluta ducimus odio in?
+                        Placeat
+                        cumque, corporis fugiat eos, voluptatibus dolorem sed quia praesentium dolore architecto
+                        voluptas.
+                        Atque tempora impedit ipsum deleniti? Laboriosam quibusdam velit magni dolor consequatur?</p>
+                    <br>
+                    <h2>GLAGAH BEACH</h2>
+                    <h6>Yogyakarta, Aug 27 2020</h6>
+                    <img class="img-fluid" src="assets/img/2.jpg" alt="Picture2">
+                    <br>
+                    <br>
+                    <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi recusandae
+                        ad nihil? Esse,
+                        numquam.
+                        Minima aperiam, fugit suscipit qui cum hic unde iure laboriosam, magni porro necessitatibus
+                        sapiente
+                        id quo tempore dicta fuga eius, libero error dolore placeat quam blanditiis beatae culpa! Illo
+                        fugiat aperiam vel sequi in asperiores impedit!</p>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-sm-3"><img src="assets/img/3.jpg" alt="" class="img-thumbnail"></div>
+                <div class="col-sm-3"><img src="assets/img/4.jpg" alt="" class="img-thumbnail"></div>
+                <div class="col-sm-3"><img src="assets/img/5.jpg" alt="" class="img-thumbnail"></div>
+                <div class="col-sm-3"><img src="assets/img/6.jpg" alt="" class="img-thumbnail"></div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-sm-4"><img src="assets/img/fti.png" alt=""></div>
+                <div class="col-sm-8 p-5 fti">
+                    <b>Fakultas Teknologi Informasi</b>
+                    <br>
+                    <br>
+                    <p>Gedung Fakultas Teknologi Informasi<br>Kampus III Universitas Kristen Satya Wacana<br>Jl. Dr. O.
+                        Notohamidjodjo Blotongan, Sidorejo, Kota Salatiga, 50715 Indonesia
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron text-center bg-primary text-white mb-0">
+            <p>Copyright 2021 by Gruda Sakti Krida Prastya</p>
+        </div>
+    </div>
+</body>
+
+</html>
